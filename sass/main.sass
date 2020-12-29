@@ -1,0 +1,111 @@
+@import config
+.main
+    background: url(../images/dest/gamebg.jpg)no-repeat
+    padding-top: 80px
+    height: 100vh
+
+.active
+    display: block!important
+.modal
+    display: none
+    margin: 0 auto
+    max-width: 900px
+    background: #FFFFFF
+    box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.5)
+    border-radius: 20px
+    position: relative
+    @media (max-width: 927px)
+        margin: 10px
+    .modal__title
+        text-align: center
+        font-weight: 900
+        font-size: 48px
+        padding: 20px 0px 19px 0px
+    .modal__close
+        position: absolute
+        top: 46px
+        right: 40px
+        font-size: 20px
+        font-weight: 900
+        color: #000000
+        cursor: pointer
+    .modal__subtitle
+        text-align: center
+        font-family: $ru
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        line-height: 18px
+        margin-bottom: 25px
+    .modal__block-action
+        display: flex
+        justify-content: space-around
+        padding-bottom: 23px
+        .modal__item1-img
+            max-width: 120px
+            margin: 0px 20px 10px 0px
+            img
+                width: 100%
+        .modal__item1
+            float: left
+            display: flex
+            padding-left: 10px
+        .modal__wrap
+            display: inline-flex
+            flex-flow: column
+        .modal__item2
+            display: flex
+            padding: 0px 14px 0px 0px
+        .modal__item1-title, .modal__item1-btn
+            font-style: italic
+            font-weight: 900
+            font-size: 30px
+        .modal__item1-btn
+            max-width: 168px
+            background: linear-gradient(180deg, #64DD17 0%, #23B838 100%)
+            box-shadow: 0px 5px 15px rgba(35, 184, 56, 0.33), inset 0px -3px 0px rgba(18, 150, 27, 0.5), inset 0px 3px 0px #96EE23
+            border-radius: 24px
+            color: #ffffff
+            font-size: 18px
+            padding: 11px 30px
+    .modal__season-box
+        background-color: #f2f2f2
+        padding: 37px 0px 0px 0px
+        position: relative
+        border-bottom-right-radius: 20px
+        border-bottom-left-radius: 20px
+        .modal__subtitle
+            padding-left: 11px
+            margin: 3px 0px 25px 0px
+        .modal__wrap
+            display: flex
+            justify-content: space-between
+            padding: 0px 0px 37px 15px
+        .modal__item1-img
+            max-width: 121px
+            margin: 0 auto
+            img
+                width: 100%
+                text-align: center
+        .modal__item
+            width: 24%
+            .modal__wrap-soon
+                display: flex
+                justify-content: center
+        .modal__item-title
+            max-width: 208px
+            text-align: center
+            line-height: 25px
+            padding-top: 7px
+            font-weight: 700
+        .grey
+            color: grey
+        .modal__item-soon
+            background: #EC1D24
+            box-shadow: 0px 4px 12px rgba(236, 29, 36, 0.25)
+            border-radius: 24px
+            color: #ffffff
+            text-align: center
+            padding: 1px 10px
+            font-size: 12px
+

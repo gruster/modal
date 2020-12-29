@@ -1,0 +1,57 @@
+// 100 - Extra Light or Ultra Light
+// 200 - Light or Thin
+// 300 - Book or Demi
+// 400 - Regular or Normal
+// 500 - средний
+// 600 - полужирный или полужирный шрифт
+// 700 - жирный
+// 800 - черный или особо жирный или жирный
+// 900 - Экстра черный или жирный или ультра черный
+
+// USER VARIABLES SECTION
+
+$accent: #2370F4 // Accent Color
+$fontsize: 18px // Body Font Size
+$textcolor: #000000 // Text Color
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 20px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+
+// GENERAL DOCUMENT STYLES
+
+$al: 'Alegreya Sans', sans-serif
+$ru: 'Rubik', sans-serif
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+html
+	scroll-behavior: smooth // плавная прокрутка
+button
+	border-width: 0px
+	border-style: none
+button:active, button:focus
+	outline: none
+body
+	font-family: $al
+	font-size: $fontsize
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	overflow-x: hidden
+	color: $textcolor
